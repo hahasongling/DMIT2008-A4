@@ -23,7 +23,7 @@ async function POST(request) {
       line_items: [
         {
         
-          price:price,
+          price:"Hardcode Price In From Stripe Products Page",
           quantity: 1,
         },
       ],

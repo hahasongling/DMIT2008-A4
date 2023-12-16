@@ -1,5 +1,5 @@
 {
-  "name": "product-seller",
+  "name": "checkout-next-14",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,21 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "firebase-admin": "^11.11.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@stripe/stripe-js": "^2.2.0",
-    "next": "13.5.4",
+    "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0",
     "stripe": "^14.5.0"
   },
   "devDependencies": {
-    "@svgr/cli": "^8.1.0",
-    "autoprefixer": "^10",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.0.1",
     "postcss": "^8",
-    "svgo": "^3.0.2",
-    "tailwindcss": "^3.3.3"
+    "react-icons": "^4.12.0",
+    "tailwindcss": "^3.3.0"
   }
 }

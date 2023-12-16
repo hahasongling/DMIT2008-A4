@@ -1,35 +1,29 @@
 'use client'
  
 import { createCheckoutSession } from "@/app/actions/stripe";
-import { getEmployees } from "@/lib/firebase/getEmployees";
-
-function BuyNow({productPriceId }) {
-    return (
-    <form
-    action="/api/checkout"
-    method="POST"
-    >
-    <input
-    type="hidden"
-    name="id"
-    value="from dashboard"
-    />
-    {/* ADD THE PRICE ID TO THE HIDDEN FIELD */}
-    <input
-    type="hidden"
-    name="price"
-    value={productPriceId}
-    />
-    <button
-    type="submit"
-    value="submit"
-    className="w-2/5 text-xl font-bold rounded-md bg-white/5 hover:bg-white/20
-    py-2.5 text-white ring-4 ring-white/5 ring-offset-2
-    ring-offset-white/[0.09]"
-    >
-    Buy Now
-    </button>
-    </form>
-    );
+ 
+ function BuyNowButton ( {price, id, className}){
+   
+ 
+    const details={
+     
+        quanity:2,
+        price:"Enter A Price ID From Stripe"
     }
-    export { BuyNow };
+
+ 
+    return (
+        <form className="flex sm:items-start sm:gap-x-4  flex-col sm:flex-row" action='/api/checkout' method="POST" >
+      
+            <input type="hidden" name="price" value="Enter A Price ID From Stripe" />
+            {/* <button type="button"   className="flex-1 bg-blue-50   sm:text-[14px] font-medium border border-blue-50  shadow-sm shadow-blue-200/75   rounded-lg  py-1.5   text-blue-500   "  >Buy Now</button> */}
+            <button type="button" disabled className="flex-1 bg-blue-50   sm:text-[14px] font-medium border border-blue-50  shadow-sm shadow-blue-200/75   rounded-lg  py-1.5   text-blue-500  "  >Bridge Club </button>
+            
+        </form>
+    )
+ }
+
+
+
+ export {BuyNowButton}
+ 
