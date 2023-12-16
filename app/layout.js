@@ -8,12 +8,9 @@
       styles
 */
  
-
 import { NavBar } from '../components/navigation/NavBar'
-
 import './globals.css'
  
-
  
 export const metadata = {
   title: 'Welcome to Our Store',

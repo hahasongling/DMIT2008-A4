@@ -1,7 +1,8 @@
 'use client'
  
 import { createCheckoutSession } from "@/app/actions/stripe";
- 
+import { getEmployees } from "@/lib/firebase/getEmployees";
+
 function BuyNow({productPriceId }) {
     return (
     <form
